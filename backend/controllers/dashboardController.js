@@ -3,9 +3,12 @@ const db = require('../config/db');
 const getStats = (req, res) => {
   const queries = {
     totalOrders: 'SELECT COUNT(*) AS count FROM tblOrder',
-    pendingOrders: "SELECT COUNT(*) AS count FROM tblOrder WHERE orderStatus = 'Pending'",
-    forInstallation: "SELECT COUNT(*) AS count FROM tblOrder WHERE orderStatus = 'For Installation'",
-    completedOrders: "SELECT COUNT(*) AS count FROM tblOrder WHERE orderStatus = 'Completed'",
+    pendingOrders:
+      "SELECT COUNT(*) AS count FROM tblOrder WHERE orderStatus = 'Pending'",
+    forInstallation:
+      "SELECT COUNT(*) AS count FROM tblOrder WHERE orderStatus = 'For Installation'",
+    completedOrders:
+      "SELECT COUNT(*) AS count FROM tblOrder WHERE orderStatus = 'Completed'",
     totalSales: 'SELECT COALESCE(SUM(totalAmount), 0) AS total FROM tblSales',
   };
 
@@ -16,7 +19,8 @@ const getStats = (req, res) => {
   keys.forEach((key) => {
     db.query(queries[key], (err, rows) => {
       if (err) return res.status(500).json({ error: err.message });
-      results[key] = key === 'totalSales' ? Number(rows[0].total) : rows[0].count;
+      results[key] =
+        key === 'totalSales' ? Number(rows[0].total) : rows[0].count;
       done++;
       if (done === keys.length) res.json(results);
     });
