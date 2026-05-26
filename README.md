@@ -2,6 +2,7 @@ ALUMINUM AND GLASS SUPPLY SALES AND ORDER MANAGEMENT SYSTEM
 
 
 DESCRIPTION OF THE PROJECT:
+
 This project focuses on developing Sales and Order Management System for an Aluminum and Glass
 Supply business that provides products such as aluminum frames, glass panels, and related accessories.
 The business accepts customer orders, processes customized requests (such as specific
@@ -21,18 +22,20 @@ and installation, reducing errors and improving overall efficiency.
 
 
 OBJECTIVES OF THE PROJECT:
-• To develop a system that accurately records customer orders and product details
-• To minimize errors in measurements and item selection during order processing
-• To ensure all ordered materials re complete before delivery and installation
-• To improve the efficiency of sales transactions and order tracking
-• To provide organized and accessible records of sales and customer orders
-• To enhance customer satisfaction by reducing mistakes and delays
+
+1. To develop a system that accurately records customer orders and product details
+2. To minimize errors in measurements and item selection during order processing
+3. To ensure all ordered materials re complete before delivery and installation
+4. To improve the efficiency of sales transactions and order tracking
+5. To provide organized and accessible records of sales and customer orders
+6. To enhance customer satisfaction by reducing mistakes and delays
 
 
 
 USER MANUAL 
 
 SYSTEM OVERVIEW:
+
 The Aluminum and Glass Supply Sales and Order Management System is designed to manage the full cycle of customer orders  from registration to installation and sales tracking in a single, centralized platform. 
 
  
@@ -54,32 +57,41 @@ The Aluminum and Glass Supply Sales and Order Management System is designed to m
 MODULE HIGHLIGHTS:
 
 DASHBOARD PAGE:
+
 Shows Total Orders, Pending Orders, Ready for Installation, Completed Orders, and Total Sales. Includes a Line Chart with daily and weekly sales views. 
 
-CUSTOMER MANAGEMENT PAGE: 
+CUSTOMER MANAGEMENT PAGE:
+
 Register customers before placing orders. All customer records are stored and linked to their respective orders. 
 
 ORDER MANAGEMENT PAGE:
+
 Select a registered customer to auto-fill details and create an order. New orders are saved with a Pending status. Admin can view full order details and click the button as Ready for Installation. 
 
 INSTALLATION MANAGEMENT PAGE:
+
 Displays all orders tagged for installation. Admin click Complete once installation is done, moving the order to the Sales Page. 
 
 SALES MANAGEMENT PAGE:
+
 Tracks all completed orders including product name, quantity, price, order date and total amount. 
 
 REPORTS MANAGEMENT PAGE:
+
 Shows full order history with product name, date installed, status, and total amount per transaction. 
 
 MATERIAL MANAGEMENT PAGE:
+
 Reference list of products and their corresponding suppliers for easy restocking. 
 
 SUPPLIER MANAGEMENT PAGE:
+
 Directory of suppliers with contact numbers for quick communication. 
 
  
 
 ORDER FLOW:
+
 The following table outlines the step-by-step process from order creation to completion: 
 
 
